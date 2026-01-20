@@ -1,0 +1,379 @@
+*{
+    box-sizing: border-box;
+}
+header, footer{
+    width: 100%;
+}
+/*-----header-----*/
+header{
+    background-color: #F4B473;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+.top-header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo img{
+    width: 140px;
+    height: auto;
+    border-style: outset;
+    border-radius: 50%;
+    border-color:#8D0814;
+    border-width: 8px;
+}
+.name{
+    margin-left: 40px;
+    font-family: 'Merriweather';
+    font-size: 30px;
+    color: #8D0814;
+    text-align: center;
+}
+.name h1{
+    margin: 0;
+    line-height: 1.2;
+}
+/*-----donate button----*/
+.button {
+    padding: 20px;
+    background-color: #8D0814;
+    border-radius: 8px;
+}
+.button a{
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+}
+.button:hover{
+    background-color: #E27D7D;
+}
+/*-----navigation------*/
+.nav{
+    background-color: #8D0814;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius:10px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.nav ul li a{ 
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: Merriweather;    
+}
+.nav ul li a:hover{
+    color: #b49b9b;
+    transition: 0.2s;
+}
+/*-----Main Body------*/
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: #cfe5ea;
+    border-radius: 6px;
+}
+.cause,.impact,.register{
+    text-align: center;
+    background-color: #8bc383;
+    padding: 40px;
+    width: 25%;
+    margin: 20px;
+    border-radius: 6px;
+    color: #1F1F3D;
+    font-size: 19px;
+}
+.register-btn{
+    padding: 20px;
+    background-color: #8D0814;
+    border-radius: 8px;
+}
+.register-btn a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.register-btn:hover{
+    background-color: #E27D7D;
+}
+/*-----register.html------*/
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    resize: vertical;
+    width: 100%;
+    border-radius: 6px;
+
+    background-image: url("images/headerpic3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#register_form{
+    padding: 40px;
+    border: 1px solid #E27D7D;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(226, 125, 125, 0.45);
+}
+.group{
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.group label{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+.group input, .group textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #E27D7D;
+    border-radius: 5px;
+}
+#register_form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+.group-terms{
+    align-items: center;
+    color: white;
+    margin-bottom: 15px;
+}
+#button{
+    padding: 10px 20px;
+    background-color: #8D0814;
+    color: white;
+    border: 1px solid #E27D7D;
+    border-radius: 8px;
+}
+#button:hover {
+    background-color: #E27D7D;
+}
+/*------index.html(ongoing projects section)-------*/
+.projects{
+    margin-top: 10px;
+}
+.p1{
+    background-color: #cfe5ea;
+    text-align: center;
+    padding: 80px;
+    border-radius: 6px;
+}
+/*-----Programs.html----*/
+.program-section{
+    background-color: #8bc383;
+    border-radius: 6px;
+}
+.pro {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-family: 'Merriweather', serif;
+}
+.pro h2 {
+    padding-top: 10px;
+    font-size: 32px;
+    color: #8D0814;
+}
+.pro-content {
+    background-color: aliceblue;
+    margin: 15px auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.45);
+}
+.pro-content h3 {
+    color: #8D0814;
+    margin-bottom: 10px;
+}
+.pro-content p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #1F1F3D;
+    text-align: justify;
+}
+.pro-manage{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.pro-content img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.ongoing{
+    text-align: center;
+    margin: 30px 0 20px;
+    font-family: 'Merriweather', serif;
+}
+.ongoing h2{
+    font-size: 32px;
+    color: #8D0814;
+}
+.project{
+    background-color: aliceblue;
+    margin: 15px auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.45);
+}
+.project h3 {
+    color: #8D0814;
+    margin-bottom: 10px;
+}
+.project p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #1F1F3D;
+}
+.ongoing-manage{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.project img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.btn-section{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 20px;
+    background-color: #8D0814;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.btn-section a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.btn-section a:hover{
+    background-color: #E27D7D;
+}
+/*----------donate.html-----*/
+.header-text {
+    text-align: center;
+    margin: 25px 0;
+    background-color: #cfe5ea;
+    padding: 15px;
+    border-radius: 10px;    
+}
+.header-text h1 {
+    font-size: 38px;
+    color: #1f1f3d;
+    margin-bottom: 10px;
+}
+.header-text p {
+    font-size: 18px;
+    color: #1F1F3D;
+}
+.donate-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    border-radius: 6px;
+
+    background-image: url("images/header2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.donate-form{
+    padding: 40px;
+    border: 1px solid #E27D7D;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(226, 125, 125, 0.45);
+}
+.donate-form h2{
+    color: white;
+}
+.donate-group{
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.donate-group label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.donate-group input, .donate-group select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #E27D7D;
+    border-radius: 5px;
+}
+.group-option{
+    align-items: center;
+    color: white;
+    margin-bottom: 15px;
+}
+.donate-btn button{
+    padding: 10px 20px;
+    background-color: #8D0814;
+    color: white;
+    border: 1px solid #E27D7D;
+    border-radius: 8px;
+}
+.donate-btn button:hover {
+    background-color: #E27D7D;
+}
+
+/*-----Footer------*/
+footer {
+    background-color: #F4B473;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-family: 'Merriweather', serif;
+}
+footer a {
+    text-decoration: none;
+    color: #8D0814;
+    font-weight: bold;
+}
+.contact{
+    margin-top: 10px;
+    background-color: #F4B473;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+.contact h2{
+    color: #8D0814;
+}

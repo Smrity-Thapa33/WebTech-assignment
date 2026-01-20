@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="webstyle.css">
+</head>
+<body>
+    <header>
+    <div class="top-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Warm Haven Logo">
+        </div>
+        <div class="name">
+            <h1>Warm Haven Association</h1>
+        </div>
+        <div class="button">
+            <a href="donate.html">Donate Now</a>
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="header-text">
+        <h1> Make a Difference Today</h1>
+        <p>Your support can help to change young lives.</p>
+    </div>
+</header>
+<main class="donate-section">
+    <div class="donate-form">
+        <form>
+            <h2> Donor Information</h2>
+            <div class="donate-group">
+                <label for="username">Full name: </label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="donate-group">
+                <label for="email">Email: </label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="donate-group">
+                <label for="program">Select a Program to Donate:</label>
+                <select id="program" required>
+                    <option value="">Choose a Project</option>
+                    <option>Child Education Support</option>
+                    <option>Nutrition & Meal Program</option>
+                    <option>Warm Clothing Distribution</option>
+                    <option>Child Health Care Program</option>
+                </select>
+            </div>
+            <h2>Donation Amount</h2>
+                <div class="donate-group">
+                    <input type="number" placeholder="Enter amount" required>
+                </div>
+            <h2>Payment Method</h2>
+            <div class="group-option">
+                <label><input type="radio" name="payment"> eSewa</label>
+                <label><input type="radio" name="payment"> Khalti</label>
+                <label><input type="radio" name="payment"> Bank Transfer</label>
+            </div>
+            <div class="donate-btn">
+                <button type="submit">Donate</button>
+            </div>
+        </form>
+    </div>
+</main>
+    <footer class="contact">
+        <div class="phone">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:warmHaven33@gmail.com">warmHaven33@gmail.com</a> |
+            Phone: <a href="tel:+9779833710938">+977 9833710938</a></p>
+            <p>&copy; 2026 Warm Haven Association. All Rights Reserved.</p>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>
