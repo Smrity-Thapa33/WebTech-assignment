@@ -30,22 +30,27 @@
 </header>
     <div class="container">
             <div id="register_form">
-                <form action="process_register.php" method="post">
+                <form name="registerForm" onsubmit="return validateForm('registerForm')">
                 <div class="group">
-                    <label for="username">First Name:</label> <input type="text" id="username" name="firstname" placeholder="Enter your first name" required>
+                    <label for="username">First Name:</label> <input type="text" id="username" name="firstname" placeholder="Enter your first name">
+                    <div class="error" id="firstnameError"></div>
                 </div>
                 <div class="group">
-                    <label for="lastname">Last Name:</label> <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+                    <label for="lastname">Last Name:</label> <input type="text" id="lastname" name="lastname" placeholder="Enter your last name">
+                    <div class="error" id="lastnameError"></div>
                 </div>
                 <div class="group">
-                    <label for="email">Email:</label> <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="email">Email:</label> <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <div class="error" id="emailError"></div>
                 </div>
                 <div class="group">
                     <label for="reason">Why do you want to volunteer?</label>
-                    <textarea id="reason" name="reason" required></textarea> 
+                    <textarea id="reason" name="reason"></textarea> 
+                    <div class="error" id="reasonError"></div>
                 </div>
                 <div class="group-terms">
-                    <input type="checkbox" value="1" id="terms" required><label for="terms"> I agree to the terms and conditions</label>
+                    <input type="checkbox" id="terms" name="terms"><label for="terms"> I agree to the terms and conditions</label>
+                    <div class="error" id="termsError"></div> 
                 </div>
                 <div>
                     <label><input type="submit" value="Register" id="button"></label>
@@ -63,4 +68,5 @@
         </div>
     </footer>
 </body>
+<script src="form-validation.js"></script>
 </html>

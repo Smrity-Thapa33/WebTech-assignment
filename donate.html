@@ -34,35 +34,40 @@
 </header>
 <main class="donate-section">
     <div class="donate-form">
-        <form>
+        <form name="donateForm" onsubmit="return validateForm('donateForm')">
             <h2> Donor Information</h2>
             <div class="donate-group">
                 <label for="username">Full name: </label>
-                <input type="text" id="username" required>
+                <input type="text" id="username" placeholder="Enter your username">
+                <div class="error" id="usernameError"></div>
             </div>
             <div class="donate-group">
                 <label for="email">Email: </label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" placeholder="Enter your email">
+                <div class="error" id="emailError"></div>    
             </div>
             <div class="donate-group">
                 <label for="program">Select a Program to Donate:</label>
-                <select id="program" required>
+                <select id="program">
                     <option value="">Choose a Project</option>
                     <option>Child Education Support</option>
                     <option>Nutrition & Meal Program</option>
                     <option>Warm Clothing Distribution</option>
                     <option>Child Health Care Program</option>
                 </select>
+                <div class="error" id="programError"></div>
             </div>
             <h2>Donation Amount</h2>
                 <div class="donate-group">
-                    <input type="number" placeholder="Enter amount" required>
+                    <input type="number" placeholder="Enter amount">
+                    <div class="error" id="amountError"></div>
                 </div>
             <h2>Payment Method</h2>
             <div class="group-option">
                 <label><input type="radio" name="payment"> eSewa</label>
                 <label><input type="radio" name="payment"> Khalti</label>
                 <label><input type="radio" name="payment"> Bank Transfer</label>
+                <div class="error" id="paymentError"></div>
             </div>
             <div class="donate-btn">
                 <button type="submit">Donate</button>
@@ -79,5 +84,6 @@
             <a href="index.html">Back to Home</a>
         </div>
     </footer>
+    <script src="form-validation.js"></script>
 </body>
 </html>

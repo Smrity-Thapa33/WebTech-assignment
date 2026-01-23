@@ -128,7 +128,7 @@ header{
     padding: 40px;
     border: 1px solid #E27D7D;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(31, 31, 31, 0.65);
     width: 350px;
     box-shadow: 0 10px 30px rgba(226, 125, 125, 0.45);
 }
@@ -314,7 +314,7 @@ header{
     padding: 40px;
     border: 1px solid #E27D7D;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(31, 31, 31, 0.65);
     width: 350px;
     box-shadow: 0 10px 30px rgba(226, 125, 125, 0.45);
 }
@@ -376,4 +376,12 @@ footer a {
 }
 .contact h2{
     color: #8D0814;
+}
+/*----form validation------*/
+.error {
+    color: #FF6B6B;      
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 4px;
 }
